@@ -1,0 +1,61 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group = 'com.ricehead'
+version = '0.0.2'
+
+repositories {
+    mavenCentral()
+    
+    // Purpur/Paper API (because vanilla Minecraft API is trash)
+    maven {
+        name = 'purpurmc'
+        url = 'https://repo.purpurmc.org/snapshots'
+    }
+    
+    // PlaceholderAPI (for the fancy external placeholders)
+    maven {
+        name = 'placeholderapi'
+        url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/'
+    }
+    
+    // Essentials (for AFK checking)
+    maven {
+        name = 'essentialsx'
+        url = 'https://repo.essentialsx.net/releases/'
+    }
+}
+
+dependencies {
+    // Purpur API - the good shit
+    compileOnly('org.purpurmc.purpur:purpur-api:1.21.4-R0.1-SNAPSHOT') {
+        exclude group: 'org.spigotmc', module: 'spigot-api'
+    }
+    
+    // PlaceholderAPI - recommended
+    compileOnly 'me.clip:placeholderapi:2.11.6'
+    
+    // Essentials - recommended for having afk in your tab list
+    compileOnly('net.essentialsx:EssentialsX:2.20.1') {
+        exclude group: 'org.spigotmc', module: 'spigot-api'
+        exclude group: 'org.bukkit', module: 'bukkit'
+    }
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+shadowJar {
+    archiveClassifier.set('')
+    archiveFileName.set('RiceTabbyList.jar')
+}
+
+build.dependsOn shadowJar

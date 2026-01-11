@@ -1,0 +1,27 @@
+name: RiceTabbyList
+version: 1.0.0
+main: com.ricehead.tabblist.RiceTabbyList
+api-version: '1.21'
+author: RiceHead
+description: A standalone tab list plugin with TPS, OP count, domain, and AFK support
+website: https://yourserver.com
+
+# Optional dependencies (nice to have but won't break shit if missing)
+softdepend:
+  - PlaceholderAPI
+  - Essentials
+
+commands:
+  ricehead:
+    description: Main command for Rice's Tabby List
+    usage: /ricehead [reload]
+    permission: ricetabby.use
+    aliases: [rtl, riceytabby]
+
+permissions:
+  ricetabby.use:
+    description: Allows use of /ricehead command
+    default: true
+  ricetabby.reload:
+    description: Allows reloading the plugin config
+    default: op

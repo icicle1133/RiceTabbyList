@@ -1,0 +1,2 @@
+// Simple settings file because Gradle demands it
+rootProject.name = 'RiceTabbyList'

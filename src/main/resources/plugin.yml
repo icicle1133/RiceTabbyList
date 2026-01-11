@@ -1,10 +1,10 @@
 name: RiceTabbyList
-version: 1.0.0
+version: 1.0.2
 main: com.ricehead.tabblist.RiceTabbyList
 api-version: '1.21'
 author: RiceHead
 description: A standalone tab list plugin with TPS, OP count, domain, and AFK support
-website: https://yourserver.com
+website: N/A
 
 # Optional dependencies (nice to have but won't break shit if missing)
 softdepend:

@@ -12,6 +12,7 @@ public class RiceTabbyList extends JavaPlugin {
     private static RiceTabbyList instance;
     private ConfigManager configManager;
     private TPSTracker tpsTracker;
+    private RamTracker ramTracker;
     private TabListManager tabListManager;
     
     @Override
@@ -24,6 +25,7 @@ public class RiceTabbyList extends JavaPlugin {
         // Initialize managers (because who doesn't love managers?)
         configManager = new ConfigManager(this);
         tpsTracker = new TPSTracker(this);
+        ramTracker = new RamTracker(this);
         tabListManager = new TabListManager(this);
         
         // Check for PlaceholderAPI (for AFK and other external placeholders)
@@ -68,6 +70,10 @@ public class RiceTabbyList extends JavaPlugin {
     
     public TPSTracker getTPSTracker() {
         return tpsTracker;
+    }
+    
+    public RamTracker getRamTracker() {
+        return ramTracker;
     }
     
     public TabListManager getTabListManager() {

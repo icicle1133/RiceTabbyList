@@ -14,6 +14,12 @@
 #   {player} - Player's name
 #   {afk} - Player AFK status (true/false)
 #   {afk_status} - Formatted AFK tag
+#   {ram_used} - Used RAM in MB
+#   {ram_max} - Max RAM in MB
+#   {ram_free} - Free RAM in MB
+#   {ram_percent} - RAM usage percentage
+#   {ram_usage} - Formatted RAM (e.g., "2048/4096 MB")
+#   {ram_usage_percent} - Formatted RAM with % (e.g., "2048/4096 MB (50%)")
 #
 # =====================================================
 
@@ -26,11 +32,12 @@ tab:
   update-interval: 20
   
   header:
-    - "&7YOUR SERVER" # change this
+    - "&x&F&F&0&0&F&F&lYOUR SERVER" # change this
     - "&7{domain}"
     - ""
     - "&eTPS: &f{tps} &7| &eOnline: &f{players}/{max_players}"
     - "&eStaff Online: &f{op_count}"
+    - "&eRAM: &f{ram_usage}"
     - ""
   
   # Footer (bottom of tab list) - Multiple lines supported

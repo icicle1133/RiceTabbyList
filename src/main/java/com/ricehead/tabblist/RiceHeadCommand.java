@@ -63,7 +63,8 @@ public class RiceHeadCommand implements CommandExecutor {
     private void sendHelp(CommandSender sender) {
         sender.sendMessage(plugin.getConfigManager().colorize("&6&l=== Rice's Tabby List ==="));
         sender.sendMessage(plugin.getConfigManager().colorize("&e/ricehead reload &7- Reload the plugin config"));
-        sender.sendMessage(plugin.getConfigManager().colorize("&7Internal placeholders: {tps}, {op_count}, {players}, {max_players}, {domain}, {afk}, {afk_status}"));
+        sender.sendMessage(plugin.getConfigManager().colorize("&7Internal placeholders: {tps}, {op_count}, {players}, {max_players}, {domain},"));
+        sender.sendMessage(plugin.getConfigManager().colorize("&7{afk}, {afk_status}, {ram_used}, {ram_max}, {ram_free}, {ram_percent}, {ram_usage}"));
         sender.sendMessage(plugin.getConfigManager().colorize("&7External placeholders from PlaceholderAPI also supported"));
     }
 }

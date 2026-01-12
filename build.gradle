@@ -4,15 +4,15 @@ plugins {
 }
 
 group = 'com.ricehead'
-version = '0.0.2'
+version = '1.0.0'
 
 repositories {
     mavenCentral()
     
-    // Purpur/Paper API (because vanilla Minecraft API is trash)
+    // Paper API (supports all 1.21.x versions)
     maven {
-        name = 'purpurmc'
-        url = 'https://repo.purpurmc.org/snapshots'
+        name = 'papermc'
+        url = 'https://repo.papermc.io/repository/maven-public/'
     }
     
     // PlaceholderAPI (for the fancy external placeholders)
@@ -29,15 +29,14 @@ repositories {
 }
 
 dependencies {
-    // Purpur API - the good shit
-    compileOnly('org.purpurmc.purpur:purpur-api:1.21.4-R0.1-SNAPSHOT') {
+    compileOnly('io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT') {
         exclude group: 'org.spigotmc', module: 'spigot-api'
     }
     
-    // PlaceholderAPI - recommended
+    // PlaceholderAPI - optional but recommended
     compileOnly 'me.clip:placeholderapi:2.11.6'
     
-    // Essentials - recommended for having afk in your tab list
+    // Essentials - optional for AFK feature
     compileOnly('net.essentialsx:EssentialsX:2.20.1') {
         exclude group: 'org.spigotmc', module: 'spigot-api'
         exclude group: 'org.bukkit', module: 'bukkit'

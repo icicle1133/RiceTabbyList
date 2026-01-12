@@ -9,6 +9,9 @@ A standalone tab list plugin for Purpur/Paper 1.21.4
 
 Output: `build/libs/RiceTabbyList.jar`
 
+## Don't wanna build?
+- Grab a .jar in releases
+
 ## Features
 - Standalone tab list (no other plugins needed)
 - TPS tracking

@@ -5,6 +5,8 @@ A standalone tab list plugin for Purpur/Paper 1.21.4 - 1.21.11 (WILL SUPPORT OLD
 ## Build Instructions
 ```bash
 ./gradlew build
+
+if you would like to change versions, please look at build.gradle
 ```
 
 Output: `build/libs/RiceTabbyList.jar`

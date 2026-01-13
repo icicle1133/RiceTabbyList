@@ -6,4 +6,4 @@
 [] Make it less cpu heavy (it already is way less cpu + ram heavy unlike a certain tab plugin (totally not https://modrinth.com/plugin/tab-was-taken))
 [] Make sure global player list works (enable/disable from config)
 [] Make a per-world list (make sure it can be enabled/disabled so its not in conflict with a global list)
-[] Make a wiki instead of having it in the config, will likely be @ https://wiki.icicle1133.cc/ricetabbylist (NOT A VALID LINK YET) 
+[] Make a wiki instead of having it in the config, will likely be @ https://wiki.icicle1133.cc/ricetabbylist (NOT A VALID LINK YET)

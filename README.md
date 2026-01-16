@@ -1,6 +1,6 @@
 # Rice's Tabby List
 
-A standalone tab list plugin for Purpur/Paper 1.21.4 - 1.21.11 (WILL SUPPORT OLDER VERSIONS IN FUTURE RELEASES)
+A standalone tab list plugin for Purpur/Paper 1.21.4 - 1.21.11 (WILL SUPPORT OLDER VERSIONS IN FUTURE RELEASES (should work from 1.21.1-1.21.3, i will not provide releases however.))
 
 ## Build Instructions
 ```bash

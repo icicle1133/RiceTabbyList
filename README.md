@@ -46,11 +46,19 @@ Perfect for server owners who want:
 
 
 ## Build Instructions
+All in one command:
 ```bash
-./gradlew build
-
-if you would like to change versions, please look at build.gradle
+git clone https://github.com/icicle1133/RiceTabbyList && cd RiceTabbyList && chmod +x gradlew && ./gradlew build
 ```
+
+Seperated command:
+```bash
+git clone https://github.com/icicle1133/RiceTabbyList
+cd RiceTabbyList
+chmod +x gradlew
+./gradlew build
+```
+_im not providing windows build instructions, figure it out youself since you like to use ai slop_
 
 Output: `build/libs/RiceTabbyList.jar`
 

@@ -48,12 +48,12 @@ Perfect for server owners who want:
 ## Build Instructions
 All in one command:
 ```bash
-git clone https://github.com/icicle1133/RiceTabbyList && cd RiceTabbyList && chmod +x gradlew && ./gradlew build
+git clone https://github.com/icicle1133/IciclesTabbyList && cd IciclesTabbyList && chmod +x gradlew && ./gradlew build
 ```
 
 Seperated command:
 ```bash
-git clone https://github.com/icicle1133/RiceTabbyList
+git clone https://github.com/icicle1133/IciclesTabbyList
 cd RiceTabbyList
 chmod +x gradlew
 ./gradlew build

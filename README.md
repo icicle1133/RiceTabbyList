@@ -1,10 +1,10 @@
-# Rice's Tabby List
+# Icicle's Tabby List
 A standalone tab list plugin for Purpur/Paper 1.21.x (thats 1.21 - 1.21.11)
-- A wiki is located at https://wiki.icicle1133.cc/rices-tabby-list
+- A wiki is located at https://wiki.icicle1133.cc/icicles-tabby-list
 
 ## What This Plugin Does
 
-- Rice's Tabby List replaces your default tab list with a fully customizable one that displays real-time server information. It's designed to have a stupidly simple config that isn't confusing to read.
+- Icicle's Tabby List replaces your default tab list with a fully customizable one that displays real-time server information. It's designed to have a stupidly simple config that isn't confusing to read.
 
 ### Key Features
 - Standalone tab list - No other plugins required (works independently)
